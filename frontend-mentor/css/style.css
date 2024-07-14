@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-grey: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background-color: var(--light-grey);
+  color: var(--light-grey);
+}
+.top-container {
+  background-color: #fff;
+  padding-block: 3rem;
+}
+h1 {
+  color: var(--cyan);
+}
+h3 {
+  color: var(--bright-yellow);
+  padding-block: 2rem;
+}
+.sub-container {
+  background-color: var(--cyan);
+  padding: 3rem;
+}
+.why-container {
+  background-color: hsl(179, 59%, 52%);
+  padding: 3rem;
+}
+.comm-text {
+  color: var(--grayish-blue);
+}
+.sign {
+  font-weight: 900;
+  font-size: 32px;
+}
+.period {
+  margin-left: 0.2rem;
+  color: #cccccc;
+}
+.card-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.top-container {
+  padding: 3rem;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+footer {
+  position: absolute;
+  bottom: 0; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sub-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.month {
+  padding-bottom: 1rem;
+}
+.why{
+    font-weight: 800;
+    font-size: 30px;
+}
+button {
+    background-color: var(--bright-yellow);
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid var(--bright-yellow);
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+@media(max-width: 768px) {
+    .sub-section {
+        display: block; 
+      }
+      footer {
+display: none;
+        bottom: 0;  
+      }
+      /* .card-container {
+        position: relative; 
+      } */
+}
