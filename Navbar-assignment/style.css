@@ -47,7 +47,7 @@ body {
     animation-delay: 1s;
     animation-direction: alternate;
     animation-fill-mode: forwards;
-    animation-play-state: paused;
+    animation-play-state: forwards ;
 
 }
 
